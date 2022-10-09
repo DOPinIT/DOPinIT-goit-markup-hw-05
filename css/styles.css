@@ -293,6 +293,7 @@ body {
 .backdrop.is-hidden {
         opacity: 0%;
         pointer-events: none;
+        visibility: hidden;
 }
 
 .backdrop {
@@ -305,6 +306,9 @@ body {
         z-index: 1;
 
         background: rgba(0, 0, 0, 0.2);
+        opacity:100%;
+        transition: 250ms;
+
 }
 
 .modal {
@@ -498,7 +502,6 @@ body {
 }
 
 .team-soc-item .team-soc-link:hover {
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link {
@@ -512,6 +515,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bez
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -544,7 +548,7 @@ color: var(--white-text);
         align-items: center;
         justify-content: center;
 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-logo-link:hover,
@@ -604,6 +608,7 @@ color: var(--white-text);
         line-height: 1.7;
 
         color: rgba(255, 255, 255, 0.6);
+        transition: 250ms;
 }
 
 .footer-logo:hover {
@@ -677,14 +682,13 @@ color: var(--white-text);
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
         background-color: var(--accent-color);
-        color: var(--white-text);
-        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 
 .footer-soc-icon {
@@ -769,6 +773,7 @@ color: var(--white-text);
         width: 370px;
         background: var(--white-text);
         border: 1px solid #EEEEEE;
+        transition: 250ms;
 }
 
 .work-item:hover,
